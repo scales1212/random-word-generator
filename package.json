@@ -1,0 +1,21 @@
+{
+  "name": "random-word-generator",
+  "version": "1.0.0",
+  "description": "Improv random word generator website with category selection",
+  "main": "src/generator.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": ["**/test/**/*.test.js"],
+    "collectCoverageFrom": ["src/**/*.js"]
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.0.0"
+  },
+  "license": "MIT"
+}
