@@ -26,8 +26,20 @@
     <p>Improv Word Generator &mdash; open source</p>
   </footer>
 
-  <!-- Load data, then core logic, then UI wiring -->
+  <!-- 1. Data files (each sets a WORDS_* global) -->
+  <script src="data/places.js"></script>
+  <script src="data/transportation.js"></script>
+  <script src="data/food.js"></script>
+  <script src="data/objects.js"></script>
+  <script src="data/animals.js"></script>
+  <script src="data/occupations.js"></script>
+  <script src="data/emotions.js"></script>
+  <script src="data/actions.js"></script>
+  <script src="data/characters.js"></script>
+  <script src="data/timePeriods.js"></script>
+  <!-- 2. Manifest assembles WORD_LISTS from the globals above -->
   <script src="src/wordLists.js"></script>
+  <!-- 3. Core logic, then UI wiring -->
   <script src="src/generator.js"></script>
   <script src="src/app.js"></script>
 </body>

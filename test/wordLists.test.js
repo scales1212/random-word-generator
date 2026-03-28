@@ -25,8 +25,8 @@ describe('WORD_LISTS structure', () => {
       expect(Array.isArray(WORD_LISTS[key])).toBe(true);
     });
 
-    test(`"${key}" has at least 10 words`, () => {
-      expect(WORD_LISTS[key].length).toBeGreaterThanOrEqual(10);
+    test(`"${key}" has at least 1000 words`, () => {
+      expect(WORD_LISTS[key].length).toBeGreaterThanOrEqual(1000);
     });
 
     test(`all entries in "${key}" are non-empty strings`, () => {
